@@ -75,6 +75,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         tb5.inputView = thePicker
         tb6.inputView = thePicker
         tb7.inputView = thePicker
+        
+        //Class Level Input-picker connection statements
     }
     
     func textFieldShouldReturn(_ tb1: UITextField) -> Bool {
