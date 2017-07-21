@@ -56,6 +56,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let thePicker = UIPickerView()
         let thePicker2 = UIPickerView()
         
+        
         //Class Name self delegate assignments
         namae1.delegate = self
         namae2.delegate = self
