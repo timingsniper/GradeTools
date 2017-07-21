@@ -207,6 +207,13 @@
                         <outlet property="lb5" destination="1x6-Q4-vSL" id="ZXC-aE-qNT"/>
                         <outlet property="lb6" destination="1Q1-iR-CKv" id="JWQ-pD-CDO"/>
                         <outlet property="lb7" destination="iT5-n6-Qhr" id="95c-I7-QLP"/>
+                        <outlet property="namae1" destination="p2b-F0-NcX" id="uFK-tE-vQ7"/>
+                        <outlet property="namae2" destination="SYZ-l3-BcS" id="xJ7-m1-LCF"/>
+                        <outlet property="namae3" destination="om0-nb-Tob" id="MYE-wx-0S7"/>
+                        <outlet property="namae4" destination="E47-2K-JW1" id="c8D-e5-ST7"/>
+                        <outlet property="namae5" destination="FFu-zs-PvI" id="y5q-vm-COV"/>
+                        <outlet property="namae6" destination="Fnv-iz-qIM" id="sai-AD-Mdb"/>
+                        <outlet property="namae7" destination="HbA-D7-P8v" id="pwH-8y-fQW"/>
                         <outlet property="tb2" destination="0F2-uu-PCQ" id="Nkf-Ue-kvy"/>
                         <outlet property="tb3" destination="smd-Gm-a1B" id="YXS-2f-Z2X"/>
                         <outlet property="tb4" destination="d7U-dI-HcZ" id="CeC-Lr-sm5"/>
