@@ -12,7 +12,16 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
-    // Letter Grade Textboxes
+    //Class Name Tetboxes (For keyboard hiding)
+    @IBOutlet weak var namae1: UITextField!
+    @IBOutlet weak var namae2: UITextField!
+    @IBOutlet weak var namae3: UITextField!
+    @IBOutlet weak var namae4: UITextField!
+    @IBOutlet weak var namae5: UITextField!
+    @IBOutlet weak var namae6: UITextField!
+    @IBOutlet weak var namae7: UITextField!
+    
+    //Letter Grade Textboxes
     @IBOutlet weak var theTextfield: UITextField!
     @IBOutlet weak var tb2: UITextField!
     @IBOutlet weak var tb3: UITextField!
@@ -46,6 +55,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         //Declaration of the picker view
         let thePicker = UIPickerView()
         let thePicker2 = UIPickerView()
+        
+        
+        //Class Name self delegate assignments
+        namae1.delegate = self
+        namae2.delegate = self
+        namae3.delegate = self
+        namae4.delegate = self
+        namae5.delegate = self
+        namae6.delegate = self
+        namae7.delegate = self
+        
        
         //Letter Grade Self delegate assignments
         thePicker.delegate = self
@@ -80,15 +100,42 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
     
-    func textFieldShouldReturn(_ tb1: UITextField) -> Bool {
+    //Hide-keyboard functions
+    func textFieldShouldReturn(_ namae1: UITextField) -> Bool {
         self.view.endEditing(true)
         return true
     }
     
-    func textFieldShouldReturn2(_ tb2: UITextField) -> Bool {
+    func textFieldShouldReturn2(_ namae2: UITextField) -> Bool {
         self.view.endEditing(true)
         return true
     }
+    
+    func textFieldShouldReturn3(_ namae3: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn4(_ namae4: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn5(_ namae5: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn6(_ namae6: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn7(_ namae7: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+
     
     
     override func didReceiveMemoryWarning() {
@@ -96,7 +143,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // Dispose of any resources that can be recreated.
     }
     
-
+    //Function to discriminate between selected textboxes
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.selectedTextField = textField
     }
@@ -152,24 +199,5 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     }
     
-    /*func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if self.selectedTextField == theTextfield {
-            //Set text for countryField
-            theTextfield.text = myPickerData[row]
-        }
-        else self.selectedTextField == tb2 {
-            //Set text for stateField
-            tb2.text = myPickerData[row]
-        }
-    }*/
-    
-    /*func pickerView2(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
-        tb2.text = myPickerData[row]
-    }*/
-    
-    
-
-    
-
-}
+  }
 
