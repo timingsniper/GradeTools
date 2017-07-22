@@ -1,6 +1,7 @@
 # Ginta (Temporary Name)
 Ginta (temporary code name) is an iPhone application that will be combining all calculator stuffs (GPA Calc, your grade., weighted average grade Calc) into a single app
 
+# Dev Log
 ## 2017-7-21
 Working on GPA Calculator first. 
 Letter Grade Column pickerview connection is established and is working without error
