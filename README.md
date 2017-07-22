@@ -1,7 +1,8 @@
-# Ginta-Temp-
-iPhone application project aiming to combine all calculator stuffs into a single app
+# Ginta (Temporary Name)
+Ginta (temporary code name) is an iPhone application that will be combining all calculator stuffs (GPA Calc, your grade., weighted average grade Calc) into a single app
 
 ## 2017-7-21
+Working on GPA Calculator first. 
 Letter Grade Column pickerview connection is established and is working without error
 Keyboard hide functions established for all class name fields (return)
 
