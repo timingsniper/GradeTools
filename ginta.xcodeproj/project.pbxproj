@@ -503,6 +503,7 @@
 				673186001F20B00600EC509B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		673186011F20B00600EC509B /* Build configuration list for PBXNativeTarget "gintaTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				673186031F20B00600EC509B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		673186041F20B00600EC509B /* Build configuration list for PBXNativeTarget "gintaUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +521,7 @@
 				673186061F20B00600EC509B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
