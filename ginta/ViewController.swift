@@ -5,7 +5,7 @@
 //  Created by 장준우 on 2017. 7. 20..
 //  Copyright © 2017년 Joonwoo Percy Jang. All rights reserved.
 //
-//Special Thanks to:
+//Special Thanks to the following:
 //
 //https://peterwitham.com/swift-archives/how-to-use-a-uipickerview-as-input-for-a-uitextfield/
 //was used as source code for picker view
@@ -44,19 +44,28 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var lb5: UITextField!
     @IBOutlet weak var lb6: UITextField!
     @IBOutlet weak var lb7: UITextField!
-
-
     
+    //Buton
+    @IBOutlet weak var calcButt: UIButton!
+    
+    //Result Label
+    @IBOutlet weak var resultLabel: UILabel!
+
+
+    //selectedTextField variable to discriminate the currently selected UITextField
     var selectedTextField: UITextField = UITextField()
     
-    
+    //Data for 2nd Column input picker
     let myPickerData = [String](arrayLiteral: "Select Grade","A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F")
     
+    //Data for 3rd Column input picker
     let myLevelPickerData = [String](arrayLiteral: "Select Level", "Regular", "Honors", "AP")
     
-    //Donepicker instuction function
+    //Donepicker instuction function (Action to quit the picker upon clicking done/cancel button)
     func donePicker (sender:UIBarButtonItem){
+        
         //Letter Grade Column resignFirstResponder
+        
         if self.selectedTextField == theTextfield{
             theTextfield.resignFirstResponder()
         }
@@ -86,6 +95,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
         //Class Level Column resignFirstResponder
+            
         else if self.selectedTextField == lb1{
             lb1.resignFirstResponder()
         }
@@ -363,5 +373,509 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     }
     
-  }
+    //Core Function for GPA Calculation with entered information
+    //Code from previous Mac Program <SMIC GPA Calculator> was reused.
+    func calculateGPA()->Double{
+        var tempOne : Double = 0.0
+        var tempTwo : Double = 0.0
+        var tempThree : Double = 0.0
+        var tempFour : Double = 0.0
+        var tempFive : Double = 0.0
+        var tempSix : Double = 0.0
+        var tempSeven : Double = 0.0
+        var preResult : Double = 0.0
+        var result : Double = 0.0
+        var numSub : Double = 7
+        
+        //Calculate First Class Average
+        if theTextfield.text == "A"{
+            tempOne = 4.00
+        }
+        else if theTextfield.text == "A-"{
+            tempOne = 3.67
+        }
+        else if theTextfield.text == "B+"{
+            tempOne = 3.33
+        }
+        else if theTextfield.text == "B"{
+            tempOne = 3.00
+        }
+        else if theTextfield.text == "B-"{
+            tempOne = 2.67
+        }
+        else if theTextfield.text == "C+"{
+            tempOne = 2.33
+        }
+        else if theTextfield.text == "C"{
+            tempOne = 2.00
+        }
+        else if theTextfield.text == "C-"{
+            tempOne = 1.67
+        }
+        else if theTextfield.text == "D+"{
+            tempOne = 1.33
+        }
+        else if theTextfield.text == "D"{
+            tempOne = 1.00
+        }
+        else if theTextfield.text == "D-"{
+            tempOne = 0.67
+        }
+        else if (theTextfield.text == "F" || theTextfield.text == "Select Grade"){
+            tempOne = 0.0
+        }
+        
+        
+        if (lb1.text == "Regular" || lb1.text == "Select Level"){
+            tempOne += 0.00
+        }
+            
+        else if lb1.text == "Honors"{
+            tempOne += 0.50
+        }
+            
+        else if lb1.text == "AP"{
+            tempOne += 1.00
+        }
+        
+        
+        //Calculate Second Class Average
+        if tb2.text == "A"{
+            tempTwo = 4.00
+        }
+        else if tb2.text == "A-"{
+            tempTwo = 3.67
+        }
+        else if tb2.text == "B+"{
+            tempTwo = 3.33
+        }
+        else if tb2.text == "B"{
+            tempTwo = 3.00
+        }
+        else if tb2.text == "B-"{
+            tempTwo = 2.67
+        }
+        else if tb2.text == "C+"{
+            tempTwo = 2.33
+        }
+        else if tb2.text == "C"{
+            tempTwo = 2.00
+        }
+        else if tb2.text == "C-"{
+            tempTwo = 1.67
+        }
+        else if tb2.text == "D+"{
+            tempTwo = 1.33
+        }
+        else if tb2.text == "D"{
+            tempTwo = 1.00
+        }
+        else if tb2.text == "D-"{
+            tempTwo = 0.67
+        }
+        else if (tb2.text == "F" || tb2.text == "Select Grade"){
+            tempTwo = 0.0
+        }
+        
+        
+        if (lb2.text == "Regular" || lb2.text == "Select Level"){
+            tempTwo += 0.00
+        }
+            
+        else if lb2.text == "Honors"{
+            tempTwo += 0.50
+        }
+            
+        else if lb2.text == "AP"{
+            tempTwo += 1.00
+        }
+        
+        
+        //Calculate Third Class Average
+        if tb3.text == "A"{
+            tempThree = 4.00
+        }
+        else if tb3.text == "A-"{
+            tempThree = 3.67
+        }
+        else if tb3.text == "B+"{
+            tempThree = 3.33
+        }
+        else if tb3.text == "B"{
+            tempThree = 3.00
+        }
+        else if tb3.text == "B-"{
+            tempThree = 2.67
+        }
+        else if tb3.text == "C+"{
+            tempThree = 2.33
+        }
+        else if tb3.text == "C"{
+            tempThree = 2.00
+        }
+        else if tb3.text == "C-"{
+            tempThree = 1.67
+        }
+        else if tb3.text == "D+"{
+            tempThree = 1.33
+        }
+        else if tb3.text == "D"{
+            tempThree = 1.00
+        }
+        else if tb3.text == "D-"{
+            tempThree = 0.67
+        }
+        else if (tb3.text == "F" || tb3.text == "Select Grade"){
+            tempThree = 0.0
+        }
+        
+        
+        if (lb3.text == "Regular" || lb3.text == "Select Level"){
+            tempThree += 0.00
+        }
+            
+        else if lb3.text == "Honors"{
+            tempThree += 0.50
+        }
+            
+        else if lb3.text == "AP"{
+            tempThree += 1.00
+        }
+        
+        
+        //Calculate Fourth Class Average
+        if tb4.text == "A"{
+            tempFour = 4.00
+        }
+        else if tb4.text == "A-"{
+            tempFour = 3.67
+        }
+        else if tb4.text == "B+"{
+            tempFour = 3.33
+        }
+        else if tb4.text == "B"{
+            tempFour = 3.00
+        }
+        else if tb4.text == "B-"{
+            tempFour = 2.67
+        }
+        else if tb4.text == "C+"{
+            tempFour = 2.33
+        }
+        else if tb4.text == "C"{
+            tempFour = 2.00
+        }
+        else if tb4.text == "C-"{
+            tempFour = 1.67
+        }
+        else if tb4.text == "D+"{
+            tempFour = 1.33
+        }
+        else if tb4.text == "D"{
+            tempFour = 1.00
+        }
+        else if tb4.text == "D-"{
+            tempFour = 0.67
+        }
+        else if (tb4.text == "F" || tb4.text == "Select Grade"){
+            tempFour = 0.0
+        }
+        
+        
+        if (lb4.text == "Regular" || lb4.text == "Select Level"){
+            tempFour += 0.00
+        }
+            
+        else if lb4.text == "Honors"{
+            tempFour += 0.50
+        }
+            
+        else if lb4.text == "AP"{
+            tempFour += 1.00
+        }
 
+        
+        //Calculate Fifth Class Average
+        if tb5.text == "A"{
+            tempFive = 4.00
+        }
+        else if tb5.text == "A-"{
+            tempFive = 3.67
+        }
+        else if tb5.text == "B+"{
+            tempFive = 3.33
+        }
+        else if tb5.text == "B"{
+            tempFive = 3.00
+        }
+        else if tb5.text == "B-"{
+            tempFive = 2.67
+        }
+        else if tb5.text == "C+"{
+            tempFive = 2.33
+        }
+        else if tb5.text == "C"{
+            tempFive = 2.00
+        }
+        else if tb5.text == "C-"{
+            tempFive = 1.67
+        }
+        else if tb5.text == "D+"{
+            tempFive = 1.33
+        }
+        else if tb5.text == "D"{
+            tempFive = 1.00
+        }
+        else if tb5.text == "D-"{
+            tempFive = 0.67
+        }
+        else if (tb5.text == "F" || tb5.text == "Select Grade"){
+            tempFive = 0.0
+        }
+        
+        
+        if (lb5.text == "Regular" || lb5.text == "Select Level"){
+            tempFive += 0.00
+        }
+            
+        else if lb5.text == "Honors"{
+            tempFive += 0.50
+        }
+            
+        else if lb5.text == "AP"{
+            tempFive += 1.00
+        }
+
+        //Calculate Sixth Class Average (Spacing got messy cause I began to copy to memo->find and replace lel)
+        if  tb6.text == "A"{
+            tempSix = 4.00
+        }
+            
+        else if  tb6.text == "A-"{
+            tempSix = 3.67
+        }
+            
+        else if  tb6.text == "B+"{
+            
+            tempSix = 3.33
+            
+        }
+            
+        else if  tb6.text == "B"{
+            
+            tempSix = 3.00
+            
+        }
+            
+        else if  tb6.text == "B-"{
+            
+            tempSix = 2.67
+            
+        }
+            
+        else if  tb6.text == "C+"{
+            
+            tempSix = 2.33
+            
+        }
+            
+        else if  tb6.text == "C"{
+            
+            tempSix = 2.00
+            
+        }
+            
+        else if  tb6.text == "C-"{
+            
+            tempSix = 1.67
+            
+        }
+            
+        else if  tb6.text == "D+"{
+            
+            tempSix = 1.33
+            
+        }
+            
+        else if  tb6.text == "D"{
+            
+            tempSix = 1.00
+            
+        }
+            
+        else if  tb6.text == "D-"{
+            
+            tempSix = 0.67
+            
+        }
+            
+        else if (tb6.text == "F" ||  tb6.text == "Select Grade"){
+            
+            tempSix = 0.0
+            
+        }
+        
+        
+        
+        
+        
+        if (lb6.text == "Regular" ||  lb6.text == "Select Level"){
+            
+            tempSix += 0.00
+            
+        }
+            
+            
+            
+        else if  lb6.text == "Honors"{
+            
+            tempSix += 0.50
+            
+        }
+            
+            
+            
+        else if  lb6.text == "AP"{
+            
+            tempSix += 1.00
+            
+        }
+        
+        //Calculate Seventh Class Average
+        //Calculate Fifth Class Average
+        
+        if  tb7.text == "A"{
+            
+            tempSeven = 4.00
+            
+        }
+            
+        else if  tb7.text == "A-"{
+            
+            tempSeven = 3.67
+            
+        }
+            
+        else if  tb7.text == "B+"{
+            
+            tempSeven = 3.33
+            
+        }
+            
+        else if  tb7.text == "B"{
+            
+            tempSeven = 3.00
+            
+        }
+            
+        else if  tb7.text == "B-"{
+            
+            tempSeven = 2.67
+            
+        }
+            
+        else if  tb7.text == "C+"{
+            
+            tempSeven = 2.33
+            
+        }
+            
+        else if  tb7.text == "C"{
+            
+            tempSeven = 2.00
+            
+        }
+            
+        else if  tb7.text == "C-"{
+            
+            tempSeven = 1.67
+            
+        }
+            
+        else if  tb7.text == "D+"{
+            
+            tempSeven = 1.33
+            
+        }
+            
+        else if  tb7.text == "D"{
+            
+            tempSeven = 1.00
+            
+        }
+            
+        else if  tb7.text == "D-"{
+            
+            tempSeven = 0.67
+            
+        }
+            
+        else if (tb7.text == "F" ||  tb7.text == "Select Grade"){
+            
+            tempSeven = 0.0
+            
+        }
+        
+        
+        
+        
+        
+        if (lb7.text == "Regular" ||  lb7.text == "Select Level"){
+            
+            tempSeven += 0.00
+            
+        }
+            
+            
+            
+        else if  lb7.text == "Honors"{
+            
+            tempSeven += 0.50
+            
+        }
+            
+            
+            
+        else if  lb7.text == "AP"{
+            
+            tempSeven += 1.00
+            
+        }
+        
+        if (tb7.text == "Select Grade" || tb7.text == ""){
+            numSub -= 1
+            tempSeven = 0
+        }
+
+        //Calculate and return
+        preResult = (tempOne + tempTwo + tempThree + tempFour + tempFive + tempSix + tempSeven)
+        
+        result = preResult/numSub
+        
+        return result
+  }
+    
+    @IBAction func calc(_ sender: Any) {
+        let result : Double = calculateGPA()
+        var gg : String
+        
+        gg =  String(format: "%.2f", result)
+        //gg = String(result)
+        
+        
+        self.resultLabel.text = "Your GPA is: " + gg
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
