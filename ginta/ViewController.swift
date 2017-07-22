@@ -56,6 +56,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let thePicker = UIPickerView()
         let thePicker2 = UIPickerView()
         
+        //Tag setting for two pickers
+        thePicker.tag = 1
+        thePicker2.tag = 2
+        
         
         //Class Name self delegate assignments
         namae1.delegate = self
@@ -97,7 +101,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         tb7.inputView = thePicker
         
         //Class Level Input-picker connection statements
-        
+        lb1.inputView = thePicker2
+        lb2.inputView = thePicker2
+        lb3.inputView = thePicker2
+        lb4.inputView = thePicker2
+        lb5.inputView = thePicker2
+        lb6.inputView = thePicker2
+        lb7.inputView = thePicker2
+    
     }
     
     //Hide-keyboard functions
@@ -135,7 +146,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.view.endEditing(true)
         return true
     }
-
     
     
     override func didReceiveMemoryWarning() {
@@ -156,12 +166,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         // TODO: Replace with data count
-        return myPickerData.count
+        if pickerView.tag == 1{
+            return myPickerData.count
+        }
+        else if pickerView.tag == 2{
+            return myLevelPickerData.count
+        }
+        return 0
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         // TODO: Replace with proper data
-        return myPickerData[row]
+        if pickerView.tag == 1{
+            return myPickerData[row]
+        }
+        else if pickerView.tag == 2{
+            return myLevelPickerData[row]
+        }
+        return ""
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -196,6 +218,36 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         else if self.selectedTextField == tb7 {
             self.tb7.text = myPickerData[row]
         }
+        
+        //Class Level Category Statements
+        else if self.selectedTextField == lb1 {
+            self.lb1.text = myLevelPickerData[row]
+        }
+        
+        else if self.selectedTextField == lb2 {
+            self.lb2.text = myLevelPickerData[row]
+        }
+        
+        else if self.selectedTextField == lb3 {
+            self.lb3.text = myLevelPickerData[row]
+        }
+        
+        else if self.selectedTextField == lb4 {
+            self.lb4.text = myLevelPickerData[row]
+        }
+        
+        else if self.selectedTextField == lb5 {
+            self.lb5.text = myLevelPickerData[row]
+        }
+        
+        else if self.selectedTextField == lb6 {
+            self.lb6.text = myLevelPickerData[row]
+        }
+        
+        else if self.selectedTextField == lb7 {
+            self.lb7.text = myLevelPickerData[row]
+        }
+    
 
     }
     
