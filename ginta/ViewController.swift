@@ -5,6 +5,9 @@
 //  Created by 장준우 on 2017. 7. 20..
 //  Copyright © 2017년 Joonwoo Percy Jang. All rights reserved.
 //
+// Code for GPA Calculator Section of the Application
+//
+//
 //Special Thanks to the following:
 //
 //https://peterwitham.com/swift-archives/how-to-use-a-uipickerview-as-input-for-a-uitextfield/
