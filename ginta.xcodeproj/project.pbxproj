@@ -14,6 +14,9 @@
 		673185E41F20B00600EC509B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673185E21F20B00600EC509B /* LaunchScreen.storyboard */; };
 		673185EF1F20B00600EC509B /* gintaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673185EE1F20B00600EC509B /* gintaTests.swift */; };
 		673185FA1F20B00600EC509B /* gintaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673185F91F20B00600EC509B /* gintaUITests.swift */; };
+		676D20111F297D8B006AC8A7 /* wacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D20101F297D8B006AC8A7 /* wacViewController.swift */; };
+		67928F151F30339D0096921D /* scaleTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 67928F141F30339D0096921D /* scaleTable.png */; };
+		67928F171F3062F20096921D /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67928F161F3062F20096921D /* profileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		673185F51F20B00600EC509B /* gintaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gintaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		673185F91F20B00600EC509B /* gintaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gintaUITests.swift; sourceTree = "<group>"; };
 		673185FB1F20B00600EC509B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676D20101F297D8B006AC8A7 /* wacViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wacViewController.swift; sourceTree = "<group>"; };
+		67928F141F30339D0096921D /* scaleTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaleTable.png; sourceTree = "<group>"; };
+		67928F161F3062F20096921D /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 				673185DB1F20B00500EC509B /* ViewController.swift */,
 				673185DD1F20B00600EC509B /* Main.storyboard */,
 				673185E01F20B00600EC509B /* Assets.xcassets */,
+				67928F141F30339D0096921D /* scaleTable.png */,
 				673185E21F20B00600EC509B /* LaunchScreen.storyboard */,
 				673185E51F20B00600EC509B /* Info.plist */,
+				676D20101F297D8B006AC8A7 /* wacViewController.swift */,
+				67928F161F3062F20096921D /* profileViewController.swift */,
 			);
 			path = ginta;
 			sourceTree = "<group>";
@@ -235,6 +244,7 @@
 				673185E41F20B00600EC509B /* LaunchScreen.storyboard in Resources */,
 				673185E11F20B00600EC509B /* Assets.xcassets in Resources */,
 				673185DF1F20B00600EC509B /* Main.storyboard in Resources */,
+				67928F151F30339D0096921D /* scaleTable.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				673185DC1F20B00600EC509B /* ViewController.swift in Sources */,
+				676D20111F297D8B006AC8A7 /* wacViewController.swift in Sources */,
+				67928F171F3062F20096921D /* profileViewController.swift in Sources */,
 				673185DA1F20B00500EC509B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
