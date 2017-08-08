@@ -54,10 +54,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //Result Label
     @IBOutlet weak var resultLabel: UILabel!
     
-    let aG = (UserDefaults.standard.string(forKey: "aVal"))
-    let aScale = (aG as NSString).doubleValue
     
-    let aMG = UserDefaults.standard.string(forKey: "aMinusVal")
+    
+
+    
     
 
 
@@ -140,6 +140,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+
+
         
         //Declaration of the picker view
         let thePicker = UIPickerView()
@@ -385,6 +390,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //Core Function for GPA Calculation with entered information
     //Code from previous Mac Program <SMIC GPA Calculator> was reused.
     func calculateGPA()->Double{
+        
+        
         var tempOne : Double = 0.0
         var tempTwo : Double = 0.0
         var tempThree : Double = 0.0
@@ -396,39 +403,82 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         var result : Double = 0.0
         var numSub : Double = 7
         
+        //Read the saved GPA scale for calculation
+        let aG = (UserDefaults.standard.string(forKey: "aVal"))!
+        let aScale = (aG as NSString).doubleValue
+        
+        let aMG = (UserDefaults.standard.string(forKey: "aMinusVal"))!
+        let aMinusScale = (aMG as NSString).doubleValue
+        
+        let bP = (UserDefaults.standard.string(forKey: "bPlusVal"))!
+        let bPlusScale = (bP as NSString).doubleValue
+        
+        let bG = (UserDefaults.standard.string(forKey: "bVal"))!
+        let bScale = (bG as NSString).doubleValue
+        
+        let bMG = (UserDefaults.standard.string(forKey: "bMinusVal"))!
+        let bMinusScale = (bMG as NSString).doubleValue
+        
+        let cP = (UserDefaults.standard.string(forKey: "cPlusVal"))!
+        let cPlusScale = (cP as NSString).doubleValue
+        
+        let cG = (UserDefaults.standard.string(forKey: "cVal"))!
+        let cScale = (cG as NSString).doubleValue
+        
+        let cMG = (UserDefaults.standard.string(forKey: "cMinusVal"))!
+        let cMinusScale = (cMG as NSString).doubleValue
+        
+        let dP = (UserDefaults.standard.string(forKey: "dPlusVal"))!
+        let dPlusScale = (dP as NSString).doubleValue
+        
+        let dG = (UserDefaults.standard.string(forKey: "dVal"))!
+        let dScale = (dG as NSString).doubleValue
+        
+        let dMG = (UserDefaults.standard.string(forKey: "dMinusVal"))!
+        let dMinusScale = (dMG as NSString).doubleValue
+        
+        let fG = (UserDefaults.standard.string(forKey: "fVal"))!
+        let fScale = (fG as NSString).doubleValue
+        
+        
+
+        
+        
+        
+        
         //Calculate First Class Average
         if theTextfield.text == "A"{
-            tempOne = 4.00
+            tempOne = aScale
         }
         else if theTextfield.text == "A-"{
-            tempOne = 3.67
+            tempOne = aMinusScale
         }
         else if theTextfield.text == "B+"{
-            tempOne = 3.33
+            tempOne = bPlusScale
         }
         else if theTextfield.text == "B"{
-            tempOne = 3.00
+            tempOne = bScale
         }
         else if theTextfield.text == "B-"{
-            tempOne = 2.67
+            tempOne = bMinusScale
         }
         else if theTextfield.text == "C+"{
-            tempOne = 2.33
+            tempOne = cPlusScale
         }
         else if theTextfield.text == "C"{
-            tempOne = 2.00
+            tempOne = cScale
         }
         else if theTextfield.text == "C-"{
-            tempOne = 1.67
+            tempOne = cMinusScale
         }
         else if theTextfield.text == "D+"{
-            tempOne = 1.33
+            tempOne = dPlusScale
         }
         else if theTextfield.text == "D"{
-            tempOne = 1.00
+            tempOne = dScale
         }
         else if theTextfield.text == "D-"{
-            tempOne = 0.67
+            tempOne = dMinusScale
         }
         else if (theTextfield.text == "F" || theTextfield.text == "Select Grade"){
             tempOne = 0.0
@@ -436,7 +486,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         
         if (lb1.text == "Regular" || lb1.text == "Select Level"){
-            tempOne += 0.00
+            tempOne += fScale
         }
             
         else if lb1.text == "Honors"{
@@ -444,43 +494,43 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
             
         else if lb1.text == "AP"{
-            tempOne += 1.00
+            tempOne += dScale
         }
         
         
         //Calculate Second Class Average
         if tb2.text == "A"{
-            tempTwo = 4.00
+            tempTwo = aScale
         }
         else if tb2.text == "A-"{
-            tempTwo = 3.67
+            tempTwo = aMinusScale
         }
         else if tb2.text == "B+"{
-            tempTwo = 3.33
+            tempTwo = bPlusScale
         }
         else if tb2.text == "B"{
-            tempTwo = 3.00
+            tempTwo = bScale
         }
         else if tb2.text == "B-"{
-            tempTwo = 2.67
+            tempTwo = bMinusScale
         }
         else if tb2.text == "C+"{
-            tempTwo = 2.33
+            tempTwo = cPlusScale
         }
         else if tb2.text == "C"{
-            tempTwo = 2.00
+            tempTwo = cScale
         }
         else if tb2.text == "C-"{
-            tempTwo = 1.67
+            tempTwo = cMinusScale
         }
         else if tb2.text == "D+"{
-            tempTwo = 1.33
+            tempTwo = dPlusScale
         }
         else if tb2.text == "D"{
-            tempTwo = 1.00
+            tempTwo = dScale
         }
         else if tb2.text == "D-"{
-            tempTwo = 0.67
+            tempTwo = dMinusScale
         }
         else if (tb2.text == "F" || tb2.text == "Select Grade"){
             tempTwo = 0.0
@@ -488,7 +538,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         
         if (lb2.text == "Regular" || lb2.text == "Select Level"){
-            tempTwo += 0.00
+            tempTwo += fScale
         }
             
         else if lb2.text == "Honors"{
@@ -496,43 +546,43 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
             
         else if lb2.text == "AP"{
-            tempTwo += 1.00
+            tempTwo += dScale
         }
         
         
         //Calculate Third Class Average
         if tb3.text == "A"{
-            tempThree = 4.00
+            tempThree = aScale
         }
         else if tb3.text == "A-"{
-            tempThree = 3.67
+            tempThree = aMinusScale
         }
         else if tb3.text == "B+"{
-            tempThree = 3.33
+            tempThree = bPlusScale
         }
         else if tb3.text == "B"{
-            tempThree = 3.00
+            tempThree = bScale
         }
         else if tb3.text == "B-"{
-            tempThree = 2.67
+            tempThree = bMinusScale
         }
         else if tb3.text == "C+"{
-            tempThree = 2.33
+            tempThree = cPlusScale
         }
         else if tb3.text == "C"{
-            tempThree = 2.00
+            tempThree = cScale
         }
         else if tb3.text == "C-"{
-            tempThree = 1.67
+            tempThree = cMinusScale
         }
         else if tb3.text == "D+"{
-            tempThree = 1.33
+            tempThree = dPlusScale
         }
         else if tb3.text == "D"{
-            tempThree = 1.00
+            tempThree = dScale
         }
         else if tb3.text == "D-"{
-            tempThree = 0.67
+            tempThree = dMinusScale
         }
         else if (tb3.text == "F" || tb3.text == "Select Grade"){
             tempThree = 0.0
@@ -540,7 +590,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         
         if (lb3.text == "Regular" || lb3.text == "Select Level"){
-            tempThree += 0.00
+            tempThree += fScale
         }
             
         else if lb3.text == "Honors"{
@@ -548,43 +598,43 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
             
         else if lb3.text == "AP"{
-            tempThree += 1.00
+            tempThree += dScale
         }
         
         
         //Calculate Fourth Class Average
         if tb4.text == "A"{
-            tempFour = 4.00
+            tempFour = aScale
         }
         else if tb4.text == "A-"{
-            tempFour = 3.67
+            tempFour = aMinusScale
         }
         else if tb4.text == "B+"{
-            tempFour = 3.33
+            tempFour = bPlusScale
         }
         else if tb4.text == "B"{
-            tempFour = 3.00
+            tempFour = bScale
         }
         else if tb4.text == "B-"{
-            tempFour = 2.67
+            tempFour = bMinusScale
         }
         else if tb4.text == "C+"{
-            tempFour = 2.33
+            tempFour = cPlusScale
         }
         else if tb4.text == "C"{
-            tempFour = 2.00
+            tempFour = cScale
         }
         else if tb4.text == "C-"{
-            tempFour = 1.67
+            tempFour = cMinusScale
         }
         else if tb4.text == "D+"{
-            tempFour = 1.33
+            tempFour = dPlusScale
         }
         else if tb4.text == "D"{
-            tempFour = 1.00
+            tempFour = dScale
         }
         else if tb4.text == "D-"{
-            tempFour = 0.67
+            tempFour = dMinusScale
         }
         else if (tb4.text == "F" || tb4.text == "Select Grade"){
             tempFour = 0.0
@@ -592,7 +642,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         
         if (lb4.text == "Regular" || lb4.text == "Select Level"){
-            tempFour += 0.00
+            tempFour += fScale
         }
             
         else if lb4.text == "Honors"{
@@ -600,43 +650,43 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
             
         else if lb4.text == "AP"{
-            tempFour += 1.00
+            tempFour += dScale
         }
 
         
         //Calculate Fifth Class Average
         if tb5.text == "A"{
-            tempFive = 4.00
+            tempFive = aScale
         }
         else if tb5.text == "A-"{
-            tempFive = 3.67
+            tempFive = aMinusScale
         }
         else if tb5.text == "B+"{
-            tempFive = 3.33
+            tempFive = bPlusScale
         }
         else if tb5.text == "B"{
-            tempFive = 3.00
+            tempFive = bScale
         }
         else if tb5.text == "B-"{
-            tempFive = 2.67
+            tempFive = bMinusScale
         }
         else if tb5.text == "C+"{
-            tempFive = 2.33
+            tempFive = cPlusScale
         }
         else if tb5.text == "C"{
-            tempFive = 2.00
+            tempFive = cScale
         }
         else if tb5.text == "C-"{
-            tempFive = 1.67
+            tempFive = cMinusScale
         }
         else if tb5.text == "D+"{
-            tempFive = 1.33
+            tempFive = dPlusScale
         }
         else if tb5.text == "D"{
-            tempFive = 1.00
+            tempFive = dScale
         }
         else if tb5.text == "D-"{
-            tempFive = 0.67
+            tempFive = dMinusScale
         }
         else if (tb5.text == "F" || tb5.text == "Select Grade"){
             tempFive = 0.0
@@ -644,7 +694,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         
         if (lb5.text == "Regular" || lb5.text == "Select Level"){
-            tempFive += 0.00
+            tempFive += fScale
         }
             
         else if lb5.text == "Honors"{
@@ -652,69 +702,69 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
             
         else if lb5.text == "AP"{
-            tempFive += 1.00
+            tempFive += dScale
         }
 
         //Calculate Sixth Class Average (Spacing got messy cause I began to copy to memo->find and replace lel)
         if  tb6.text == "A"{
-            tempSix = 4.00
+            tempSix = aScale
         }
             
         else if  tb6.text == "A-"{
-            tempSix = 3.67
+            tempSix = aMinusScale
         }
             
         else if  tb6.text == "B+"{
             
-            tempSix = 3.33
+            tempSix = bPlusScale
             
         }
             
         else if  tb6.text == "B"{
             
-            tempSix = 3.00
+            tempSix = bScale
             
         }
             
         else if  tb6.text == "B-"{
             
-            tempSix = 2.67
+            tempSix = bMinusScale
             
         }
             
         else if  tb6.text == "C+"{
             
-            tempSix = 2.33
+            tempSix = cPlusScale
             
         }
             
         else if  tb6.text == "C"{
             
-            tempSix = 2.00
+            tempSix = cScale
             
         }
             
         else if  tb6.text == "C-"{
             
-            tempSix = 1.67
+            tempSix = cMinusScale
             
         }
             
         else if  tb6.text == "D+"{
             
-            tempSix = 1.33
+            tempSix = dPlusScale
             
         }
             
         else if  tb6.text == "D"{
             
-            tempSix = 1.00
+            tempSix = dScale
             
         }
             
         else if  tb6.text == "D-"{
             
-            tempSix = 0.67
+            tempSix = dMinusScale
             
         }
             
@@ -730,7 +780,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         if (lb6.text == "Regular" ||  lb6.text == "Select Level"){
             
-            tempSix += 0.00
+            tempSix += fScale
             
         }
             
@@ -746,7 +796,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             
         else if  lb6.text == "AP"{
             
-            tempSix += 1.00
+            tempSix += dScale
             
         }
         
@@ -755,67 +805,67 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         if  tb7.text == "A"{
             
-            tempSeven = 4.00
+            tempSeven = aScale
             
         }
             
         else if  tb7.text == "A-"{
             
-            tempSeven = 3.67
+            tempSeven = aMinusScale
             
         }
             
         else if  tb7.text == "B+"{
             
-            tempSeven = 3.33
+            tempSeven = bPlusScale
             
         }
             
         else if  tb7.text == "B"{
             
-            tempSeven = 3.00
+            tempSeven = bScale
             
         }
             
         else if  tb7.text == "B-"{
             
-            tempSeven = 2.67
+            tempSeven = bMinusScale
             
         }
             
         else if  tb7.text == "C+"{
             
-            tempSeven = 2.33
+            tempSeven = cPlusScale
             
         }
             
         else if  tb7.text == "C"{
             
-            tempSeven = 2.00
+            tempSeven = cScale
             
         }
             
         else if  tb7.text == "C-"{
             
-            tempSeven = 1.67
+            tempSeven = cMinusScale
             
         }
             
         else if  tb7.text == "D+"{
             
-            tempSeven = 1.33
+            tempSeven = dPlusScale
             
         }
             
         else if  tb7.text == "D"{
             
-            tempSeven = 1.00
+            tempSeven = dScale
             
         }
             
         else if  tb7.text == "D-"{
             
-            tempSeven = 0.67
+            tempSeven = dMinusScale
             
         }
             
@@ -831,7 +881,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         if (lb7.text == "Regular" ||  lb7.text == "Select Level"){
             
-            tempSeven += 0.00
+            tempSeven += fScale
             
         }
             
@@ -847,7 +897,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             
         else if  lb7.text == "AP"{
             
-            tempSeven += 1.00
+            tempSeven += dScale
             
         }
         
@@ -867,12 +917,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func calc(_ sender: Any) {
         let result : Double = calculateGPA()
         var gg : String
+        let namae = UserDefaults.standard.string(forKey: "kiminonawa")
         
         gg =  String(format: "%.2f", result)
-        //gg = String(result)
         
         
-        self.resultLabel.text = "Your GPA is: " + gg
+        self.resultLabel.text = namae! + ", Your GPA is: " + gg
         
     }
     

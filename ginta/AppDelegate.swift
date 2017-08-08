@@ -27,7 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             "dPlusVal" : 1.33,
             "dVal" : 1.00,
             "dMinusVal" : 0.67,
-            "fVal" : 0.00
+            "fVal" : 0.00,
+            "kiminonawa" : "Nameless Dude"
         ]
         defaults.register(defaults: defaultValues)
         super.init()

@@ -633,6 +633,7 @@
                         <outlet property="dMinusField" destination="hpT-lT-3VF" id="J7l-RV-qeP"/>
                         <outlet property="dPlusField" destination="uyg-0e-rir" id="86N-dD-KaK"/>
                         <outlet property="fField" destination="8w5-wq-xcu" id="82B-Np-53s"/>
+                        <outlet property="nameField" destination="CbA-FZ-CeC" id="XJl-QA-F9o"/>
                         <outlet property="saveButt" destination="jGg-eS-pft" id="IXP-ZD-n56"/>
                     </connections>
                 </viewController>

@@ -41,6 +41,7 @@ class profileviewController : UIViewController, UITextFieldDelegate {
     @IBOutlet weak var dField: UITextField!
     @IBOutlet weak var dMinusField: UITextField!
     @IBOutlet weak var fField: UITextField!
+    @IBOutlet weak var nameField: UITextField!
     
     @IBOutlet weak var saveButt: UIButton!
     
@@ -66,6 +67,7 @@ class profileviewController : UIViewController, UITextFieldDelegate {
         dField.delegate = self
         dMinusField.delegate = self
         fField.delegate = self
+        nameField.delegate = self
         
         //Set saved texts as default text in the textbox
         aField.text = UserDefaults.standard.string(forKey: "aVal")
@@ -80,6 +82,7 @@ class profileviewController : UIViewController, UITextFieldDelegate {
         dField.text = UserDefaults.standard.string(forKey: "dVal")
         dMinusField.text = UserDefaults.standard.string(forKey: "dMinusVal")
         fField.text = UserDefaults.standard.string(forKey: "fVal")
+        nameField.text = UserDefaults.standard.string(forKey: "kiminonawa")
         
         
         
@@ -165,6 +168,7 @@ class profileviewController : UIViewController, UITextFieldDelegate {
         userDefaults.set((dField.text! as NSString).doubleValue, forKey: "dVal")
         userDefaults.set((dMinusField.text! as NSString).doubleValue, forKey: "dMinusVal")
         userDefaults.set((fField.text! as NSString).doubleValue, forKey: "fVal")
+        userDefaults.set((nameField.text! as NSString), forKey : "kiminonawa")
         
         
         
