@@ -23,8 +23,8 @@ let dMinusScale : Double = 0
 let fScale : Double = 0*/
 
 
-
 let userDefaults = UserDefaults.standard
+
 
 
 
@@ -41,10 +41,12 @@ class profileviewController : UIViewController, UITextFieldDelegate {
     @IBOutlet weak var dField: UITextField!
     @IBOutlet weak var dMinusField: UITextField!
     @IBOutlet weak var fField: UITextField!
+    @IBOutlet weak var nameField: UITextField!
     
     @IBOutlet weak var saveButt: UIButton!
     
   
+    
     
     override func viewDidLoad() {
         // Do any additional setup after loading the view, typically from a nib.
@@ -65,8 +67,30 @@ class profileviewController : UIViewController, UITextFieldDelegate {
         dField.delegate = self
         dMinusField.delegate = self
         fField.delegate = self
+        nameField.delegate = self
+        
+        //Set saved texts as default text in the textbox
+        aField.text = UserDefaults.standard.string(forKey: "aVal")
+        aMinusField.text = UserDefaults.standard.string(forKey: "aMinusVal")
+        bPlusField.text = UserDefaults.standard.string(forKey: "bPlusVal")
+        bField.text = UserDefaults.standard.string(forKey: "bVal")
+        bMinusField.text = UserDefaults.standard.string(forKey: "bMinusVal")
+        cPlusField.text = UserDefaults.standard.string(forKey: "cPlusVal")
+        cField.text = UserDefaults.standard.string(forKey: "cVal")
+        cMinusField.text = UserDefaults.standard.string(forKey: "cMinusVal")
+        dPlusField.text = UserDefaults.standard.string(forKey: "dPlusVal")
+        dField.text = UserDefaults.standard.string(forKey: "dVal")
+        dMinusField.text = UserDefaults.standard.string(forKey: "dMinusVal")
+        fField.text = UserDefaults.standard.string(forKey: "fVal")
+        nameField.text = UserDefaults.standard.string(forKey: "kiminonawa")
+        
+        
+        
         
     }
+    
+
+    
     
     //Hide-keyboard functions
     func textFieldShouldReturn(_ aField: UITextField) -> Bool {
@@ -144,6 +168,7 @@ class profileviewController : UIViewController, UITextFieldDelegate {
         userDefaults.set((dField.text! as NSString).doubleValue, forKey: "dVal")
         userDefaults.set((dMinusField.text! as NSString).doubleValue, forKey: "dMinusVal")
         userDefaults.set((fField.text! as NSString).doubleValue, forKey: "fVal")
+        userDefaults.set((nameField.text! as NSString), forKey : "kiminonawa")
         
         
         
