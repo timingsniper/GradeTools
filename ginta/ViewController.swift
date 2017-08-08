@@ -53,6 +53,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     //Result Label
     @IBOutlet weak var resultLabel: UILabel!
+    
+    let aG = (UserDefaults.standard.string(forKey: "aVal"))
+    let aScale = (aG as NSString).doubleValue
+    
+    let aMG = UserDefaults.standard.string(forKey: "aMinusVal")
+    
 
 
     //selectedTextField variable to discriminate the currently selected UITextField

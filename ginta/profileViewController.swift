@@ -23,8 +23,8 @@ let dMinusScale : Double = 0
 let fScale : Double = 0*/
 
 
-
 let userDefaults = UserDefaults.standard
+
 
 
 
@@ -46,6 +46,7 @@ class profileviewController : UIViewController, UITextFieldDelegate {
     
   
     
+    
     override func viewDidLoad() {
         // Do any additional setup after loading the view, typically from a nib.
         super.viewDidLoad()
@@ -66,7 +67,27 @@ class profileviewController : UIViewController, UITextFieldDelegate {
         dMinusField.delegate = self
         fField.delegate = self
         
+        //Set saved texts as default text in the textbox
+        aField.text = UserDefaults.standard.string(forKey: "aVal")
+        aMinusField.text = UserDefaults.standard.string(forKey: "aMinusVal")
+        bPlusField.text = UserDefaults.standard.string(forKey: "bPlusVal")
+        bField.text = UserDefaults.standard.string(forKey: "bVal")
+        bMinusField.text = UserDefaults.standard.string(forKey: "bMinusVal")
+        cPlusField.text = UserDefaults.standard.string(forKey: "cPlusVal")
+        cField.text = UserDefaults.standard.string(forKey: "cVal")
+        cMinusField.text = UserDefaults.standard.string(forKey: "cMinusVal")
+        dPlusField.text = UserDefaults.standard.string(forKey: "dPlusVal")
+        dField.text = UserDefaults.standard.string(forKey: "dVal")
+        dMinusField.text = UserDefaults.standard.string(forKey: "dMinusVal")
+        fField.text = UserDefaults.standard.string(forKey: "fVal")
+        
+        
+        
+        
     }
+    
+
+    
     
     //Hide-keyboard functions
     func textFieldShouldReturn(_ aField: UITextField) -> Bool {

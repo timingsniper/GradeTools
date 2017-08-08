@@ -12,6 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    override init() {
+        let defaults = UserDefaults.standard
+        let defaultValues : [String : Any] = [
+            "aVal" : 4.00,
+            "aMinusVal" : 3.67,
+            "bPlusVal" : 3.33,
+            "bVal" : 3.00,
+            "bMinusVal": 2.67,
+            "cPlusVal": 2.33,
+            "cVal" : 2.00,
+            "cMinusVal" : 1.67,
+            "dPlusVal" : 1.33,
+            "dVal" : 1.00,
+            "dMinusVal" : 0.67,
+            "fVal" : 0.00
+        ]
+        defaults.register(defaults: defaultValues)
+        super.init()
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
