@@ -16,3 +16,9 @@ Cancel and Done button is visible on pickerview input and works without error. (
 Thank you Stackoverflow
 
 ![Alt Text](https://github.com/timingsniper/Ginta-Temp-/blob/master/20170722-p.png) 
+
+
+## 2017-8-8
+90% Complete.
+
+![Alt Text](https://github.com/timingsniper/Ginta/blob/master/20170808.png)
