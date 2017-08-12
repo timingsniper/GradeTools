@@ -17,6 +17,21 @@
 		676D20111F297D8B006AC8A7 /* wacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D20101F297D8B006AC8A7 /* wacViewController.swift */; };
 		67928F151F30339D0096921D /* scaleTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 67928F141F30339D0096921D /* scaleTable.png */; };
 		67928F171F3062F20096921D /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67928F161F3062F20096921D /* profileViewController.swift */; };
+		6799E87F1F3EF874006658BF /* education.trophy_star 256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E87E1F3EF874006658BF /* education.trophy_star 256.png */; };
+		6799E8801F3EF874006658BF /* education.trophy_star 256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E87E1F3EF874006658BF /* education.trophy_star 256.png */; };
+		6799E8811F3EF874006658BF /* education.trophy_star 256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E87E1F3EF874006658BF /* education.trophy_star 256.png */; };
+		6799E8871F3F03B8006658BF /* icons8-Home-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E8861F3F03B8006658BF /* icons8-Home-25.png */; };
+		6799E8881F3F03B8006658BF /* icons8-Home-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E8861F3F03B8006658BF /* icons8-Home-25.png */; };
+		6799E8891F3F03B8006658BF /* icons8-Home-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E8861F3F03B8006658BF /* icons8-Home-25.png */; };
+		6799E88B1F3F0469006658BF /* icons8-Home Button-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E88A1F3F0469006658BF /* icons8-Home Button-25.png */; };
+		6799E88C1F3F0469006658BF /* icons8-Home Button-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E88A1F3F0469006658BF /* icons8-Home Button-25.png */; };
+		6799E88D1F3F0469006658BF /* icons8-Home Button-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E88A1F3F0469006658BF /* icons8-Home Button-25.png */; };
+		6799E88F1F3F048F006658BF /* icons8-Home Button Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E88E1F3F048F006658BF /* icons8-Home Button Filled-25.png */; };
+		6799E8901F3F048F006658BF /* icons8-Home Button Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E88E1F3F048F006658BF /* icons8-Home Button Filled-25.png */; };
+		6799E8911F3F048F006658BF /* icons8-Home Button Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E88E1F3F048F006658BF /* icons8-Home Button Filled-25.png */; };
+		6799E8931F3F04CA006658BF /* icons8-About-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E8921F3F04CA006658BF /* icons8-About-25.png */; };
+		6799E8941F3F04CA006658BF /* icons8-About-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E8921F3F04CA006658BF /* icons8-About-25.png */; };
+		6799E8951F3F04CA006658BF /* icons8-About-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E8921F3F04CA006658BF /* icons8-About-25.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,22 +52,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		673185D61F20B00500EC509B /* ginta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ginta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		673185D61F20B00500EC509B /* GradeTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradeTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673185D91F20B00500EC509B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		673185DB1F20B00500EC509B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		673185DE1F20B00600EC509B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		673185E01F20B00600EC509B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		673185E31F20B00600EC509B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		673185E51F20B00600EC509B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		673185EA1F20B00600EC509B /* gintaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gintaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		673185EA1F20B00600EC509B /* GradeToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradeToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		673185EE1F20B00600EC509B /* gintaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gintaTests.swift; sourceTree = "<group>"; };
 		673185F01F20B00600EC509B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		673185F51F20B00600EC509B /* gintaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gintaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		673185F51F20B00600EC509B /* GradeToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradeToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		673185F91F20B00600EC509B /* gintaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gintaUITests.swift; sourceTree = "<group>"; };
 		673185FB1F20B00600EC509B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		676D20101F297D8B006AC8A7 /* wacViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wacViewController.swift; sourceTree = "<group>"; };
 		67928F141F30339D0096921D /* scaleTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaleTable.png; sourceTree = "<group>"; };
 		67928F161F3062F20096921D /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		6799E87E1F3EF874006658BF /* education.trophy_star 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "education.trophy_star 256.png"; sourceTree = "<group>"; };
+		6799E8861F3F03B8006658BF /* icons8-Home-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Home-25.png"; sourceTree = "<group>"; };
+		6799E88A1F3F0469006658BF /* icons8-Home Button-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Home Button-25.png"; sourceTree = "<group>"; };
+		6799E88E1F3F048F006658BF /* icons8-Home Button Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Home Button Filled-25.png"; sourceTree = "<group>"; };
+		6799E8921F3F04CA006658BF /* icons8-About-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-About-25.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +113,9 @@
 		673185D71F20B00500EC509B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				673185D61F20B00500EC509B /* ginta.app */,
-				673185EA1F20B00600EC509B /* gintaTests.xctest */,
-				673185F51F20B00600EC509B /* gintaUITests.xctest */,
+				673185D61F20B00500EC509B /* GradeTools.app */,
+				673185EA1F20B00600EC509B /* GradeToolsTests.xctest */,
+				673185F51F20B00600EC509B /* GradeToolsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +129,11 @@
 				673185E01F20B00600EC509B /* Assets.xcassets */,
 				67928F141F30339D0096921D /* scaleTable.png */,
 				673185E21F20B00600EC509B /* LaunchScreen.storyboard */,
+				6799E87E1F3EF874006658BF /* education.trophy_star 256.png */,
+				6799E8861F3F03B8006658BF /* icons8-Home-25.png */,
+				6799E8921F3F04CA006658BF /* icons8-About-25.png */,
+				6799E88E1F3F048F006658BF /* icons8-Home Button Filled-25.png */,
+				6799E88A1F3F0469006658BF /* icons8-Home Button-25.png */,
 				673185E51F20B00600EC509B /* Info.plist */,
 				676D20101F297D8B006AC8A7 /* wacViewController.swift */,
 				67928F161F3062F20096921D /* profileViewController.swift */,
@@ -137,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		673185D51F20B00500EC509B /* ginta */ = {
+		673185D51F20B00500EC509B /* GradeTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 673185FE1F20B00600EC509B /* Build configuration list for PBXNativeTarget "ginta" */;
+			buildConfigurationList = 673185FE1F20B00600EC509B /* Build configuration list for PBXNativeTarget "GradeTools" */;
 			buildPhases = (
 				673185D21F20B00500EC509B /* Sources */,
 				673185D31F20B00500EC509B /* Frameworks */,
@@ -149,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = ginta;
+			name = GradeTools;
 			productName = ginta;
-			productReference = 673185D61F20B00500EC509B /* ginta.app */;
+			productReference = 673185D61F20B00500EC509B /* GradeTools.app */;
 			productType = "com.apple.product-type.application";
 		};
-		673185E91F20B00600EC509B /* gintaTests */ = {
+		673185E91F20B00600EC509B /* GradeToolsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 673186011F20B00600EC509B /* Build configuration list for PBXNativeTarget "gintaTests" */;
+			buildConfigurationList = 673186011F20B00600EC509B /* Build configuration list for PBXNativeTarget "GradeToolsTests" */;
 			buildPhases = (
 				673185E61F20B00600EC509B /* Sources */,
 				673185E71F20B00600EC509B /* Frameworks */,
@@ -167,14 +192,14 @@
 			dependencies = (
 				673185EC1F20B00600EC509B /* PBXTargetDependency */,
 			);
-			name = gintaTests;
+			name = GradeToolsTests;
 			productName = gintaTests;
-			productReference = 673185EA1F20B00600EC509B /* gintaTests.xctest */;
+			productReference = 673185EA1F20B00600EC509B /* GradeToolsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		673185F41F20B00600EC509B /* gintaUITests */ = {
+		673185F41F20B00600EC509B /* GradeToolsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 673186041F20B00600EC509B /* Build configuration list for PBXNativeTarget "gintaUITests" */;
+			buildConfigurationList = 673186041F20B00600EC509B /* Build configuration list for PBXNativeTarget "GradeToolsUITests" */;
 			buildPhases = (
 				673185F11F20B00600EC509B /* Sources */,
 				673185F21F20B00600EC509B /* Frameworks */,
@@ -185,9 +210,9 @@
 			dependencies = (
 				673185F71F20B00600EC509B /* PBXTargetDependency */,
 			);
-			name = gintaUITests;
+			name = GradeToolsUITests;
 			productName = gintaUITests;
-			productReference = 673185F51F20B00600EC509B /* gintaUITests.xctest */;
+			productReference = 673185F51F20B00600EC509B /* GradeToolsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -202,6 +227,7 @@
 				TargetAttributes = {
 					673185D51F20B00500EC509B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8WABJGLV4L;
 						ProvisioningStyle = Automatic;
 					};
 					673185E91F20B00600EC509B = {
@@ -216,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 673185D11F20B00500EC509B /* Build configuration list for PBXProject "ginta" */;
+			buildConfigurationList = 673185D11F20B00500EC509B /* Build configuration list for PBXProject "GradeTools" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +255,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				673185D51F20B00500EC509B /* ginta */,
-				673185E91F20B00600EC509B /* gintaTests */,
-				673185F41F20B00600EC509B /* gintaUITests */,
+				673185D51F20B00500EC509B /* GradeTools */,
+				673185E91F20B00600EC509B /* GradeToolsTests */,
+				673185F41F20B00600EC509B /* GradeToolsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,10 +267,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6799E88B1F3F0469006658BF /* icons8-Home Button-25.png in Resources */,
+				6799E8931F3F04CA006658BF /* icons8-About-25.png in Resources */,
 				673185E41F20B00600EC509B /* LaunchScreen.storyboard in Resources */,
+				6799E88F1F3F048F006658BF /* icons8-Home Button Filled-25.png in Resources */,
+				6799E87F1F3EF874006658BF /* education.trophy_star 256.png in Resources */,
 				673185E11F20B00600EC509B /* Assets.xcassets in Resources */,
 				673185DF1F20B00600EC509B /* Main.storyboard in Resources */,
 				67928F151F30339D0096921D /* scaleTable.png in Resources */,
+				6799E8871F3F03B8006658BF /* icons8-Home-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +283,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6799E88C1F3F0469006658BF /* icons8-Home Button-25.png in Resources */,
+				6799E8801F3EF874006658BF /* education.trophy_star 256.png in Resources */,
+				6799E8901F3F048F006658BF /* icons8-Home Button Filled-25.png in Resources */,
+				6799E8881F3F03B8006658BF /* icons8-Home-25.png in Resources */,
+				6799E8941F3F04CA006658BF /* icons8-About-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6799E88D1F3F0469006658BF /* icons8-Home Button-25.png in Resources */,
+				6799E8811F3EF874006658BF /* education.trophy_star 256.png in Resources */,
+				6799E8911F3F048F006658BF /* icons8-Home Button Filled-25.png in Resources */,
+				6799E8891F3F03B8006658BF /* icons8-Home-25.png in Resources */,
+				6799E8951F3F04CA006658BF /* icons8-About-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +338,12 @@
 /* Begin PBXTargetDependency section */
 		673185EC1F20B00600EC509B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 673185D51F20B00500EC509B /* ginta */;
+			target = 673185D51F20B00500EC509B /* GradeTools */;
 			targetProxy = 673185EB1F20B00600EC509B /* PBXContainerItemProxy */;
 		};
 		673185F71F20B00600EC509B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 673185D51F20B00500EC509B /* ginta */;
+			target = 673185D51F20B00500EC509B /* GradeTools */;
 			targetProxy = 673185F61F20B00600EC509B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -367,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -410,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -422,13 +463,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8WABJGLV4L;
 				INFOPLIST_FILE = ginta/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = timingsniper.ginta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joonwoo.GradeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -436,13 +481,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8WABJGLV4L;
 				INFOPLIST_FILE = ginta/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = timingsniper.ginta;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joonwoo.GradeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -456,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = timingsniper.gintaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ginta.app/ginta";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradeTools.app/GradeTools";
 			};
 			name = Debug;
 		};
@@ -470,7 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = timingsniper.gintaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ginta.app/ginta";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradeTools.app/GradeTools";
 			};
 			name = Release;
 		};
@@ -503,7 +552,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		673185D11F20B00500EC509B /* Build configuration list for PBXProject "ginta" */ = {
+		673185D11F20B00500EC509B /* Build configuration list for PBXProject "GradeTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				673185FC1F20B00600EC509B /* Debug */,
@@ -512,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		673185FE1F20B00600EC509B /* Build configuration list for PBXNativeTarget "ginta" */ = {
+		673185FE1F20B00600EC509B /* Build configuration list for PBXNativeTarget "GradeTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				673185FF1F20B00600EC509B /* Debug */,
@@ -521,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		673186011F20B00600EC509B /* Build configuration list for PBXNativeTarget "gintaTests" */ = {
+		673186011F20B00600EC509B /* Build configuration list for PBXNativeTarget "GradeToolsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				673186021F20B00600EC509B /* Debug */,
@@ -530,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		673186041F20B00600EC509B /* Build configuration list for PBXNativeTarget "gintaUITests" */ = {
+		673186041F20B00600EC509B /* Build configuration list for PBXNativeTarget "GradeToolsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				673186051F20B00600EC509B /* Debug */,

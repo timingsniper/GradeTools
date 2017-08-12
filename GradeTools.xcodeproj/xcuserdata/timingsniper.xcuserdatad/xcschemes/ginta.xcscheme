@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "673185D51F20B00500EC509B"
-               BuildableName = "ginta.app"
-               BlueprintName = "ginta"
-               ReferencedContainer = "container:ginta.xcodeproj">
+               BuildableName = "GradeTools.app"
+               BlueprintName = "GradeTools"
+               ReferencedContainer = "container:GradeTools.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "673185E91F20B00600EC509B"
-               BuildableName = "gintaTests.xctest"
-               BlueprintName = "gintaTests"
-               ReferencedContainer = "container:ginta.xcodeproj">
+               BuildableName = "GradeToolsTests.xctest"
+               BlueprintName = "GradeToolsTests"
+               ReferencedContainer = "container:GradeTools.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "673185F41F20B00600EC509B"
-               BuildableName = "gintaUITests.xctest"
-               BlueprintName = "gintaUITests"
-               ReferencedContainer = "container:ginta.xcodeproj">
+               BuildableName = "GradeToolsUITests.xctest"
+               BlueprintName = "GradeToolsUITests"
+               ReferencedContainer = "container:GradeTools.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "673185D51F20B00500EC509B"
-            BuildableName = "ginta.app"
-            BlueprintName = "ginta"
-            ReferencedContainer = "container:ginta.xcodeproj">
+            BuildableName = "GradeTools.app"
+            BlueprintName = "GradeTools"
+            ReferencedContainer = "container:GradeTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "673185D51F20B00500EC509B"
-            BuildableName = "ginta.app"
-            BlueprintName = "ginta"
-            ReferencedContainer = "container:ginta.xcodeproj">
+            BuildableName = "GradeTools.app"
+            BlueprintName = "GradeTools"
+            ReferencedContainer = "container:GradeTools.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "673185D51F20B00500EC509B"
-            BuildableName = "ginta.app"
-            BlueprintName = "ginta"
-            ReferencedContainer = "container:ginta.xcodeproj">
+            BuildableName = "GradeTools.app"
+            BlueprintName = "GradeTools"
+            ReferencedContainer = "container:GradeTools.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

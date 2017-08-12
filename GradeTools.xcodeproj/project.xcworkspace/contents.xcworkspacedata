@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ginta.xcodeproj">
+      location = "self:/Users/timingsniper/Documents/Dev/Xcode/ginta/GradeTools.xcodeproj">
    </FileRef>
 </Workspace>
