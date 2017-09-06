@@ -1,5 +1,5 @@
-# Ginta (Temporary Name)
-Ginta (temporary code name) is an iPhone application that will be combining all calculator stuffs (GPA Calc, your grade., weighted average grade Calc) into a single app
+# GradeTools (Ginta)
+GradeTools (Ginta) is an iPhone application that will be combining all calculator stuffs (GPA Calc, your grade., weighted average grade Calc) into a single app
 
 # Dev Log
 ## 2017-7-21
@@ -22,3 +22,6 @@ Thank you Stackoverflow
 90% Complete.
 
 ![Alt Text](https://github.com/timingsniper/Ginta/blob/master/20170808.png)
+
+## 2017-8-12
+Layout complete, submitted and waiting for App Store Review.
