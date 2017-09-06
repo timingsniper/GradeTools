@@ -5,11 +5,15 @@
 //  Created by 장준우 on 2017. 7. 27..
 //  Copyright © 2017년 Joonwoo Percy Jang. All rights reserved.
 //
+import GoogleMobileAds
 
 import Foundation
 import UIKit
 
 class wacViewController: UIViewController, UITextFieldDelegate {
+    
+    var bannerView: GADBannerView!
+
     //Category Name Field (For keyboard hiding)
     @IBOutlet weak var namae1: UITextField!
     @IBOutlet weak var namae2: UITextField!
@@ -40,6 +44,13 @@ class wacViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         // Do any additional setup after loading the view, typically from a nib.
         super.viewDidLoad()
+        
+        let bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        self.view.addSubview(bannerView)
+        
+        bannerView.adUnitID = "ca-app-pub-8922445711636151/7058557863"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     
         //Class Name self delegate assignments
         namae1.delegate = self
@@ -47,6 +58,18 @@ class wacViewController: UIViewController, UITextFieldDelegate {
         namae3.delegate = self
         namae4.delegate = self
         namae5.delegate = self
+        
+        weighto1.delegate = self
+        weighto2.delegate = self
+        weighto3.delegate = self
+        weighto4.delegate = self
+        weighto5.delegate = self
+        
+        grade1.delegate = self
+        grade2.delegate = self
+        grade3.delegate = self
+        grade4.delegate = self
+        grade5.delegate = self
     }
     
     
@@ -97,6 +120,31 @@ class wacViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn10(_ weighto5: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn11(_ grade1: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn12(_ grade2: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn13(_ grade3: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn14(_ grade4: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn15(_ grade5: UITextField) -> Bool {
         self.view.endEditing(true)
         return true
     }

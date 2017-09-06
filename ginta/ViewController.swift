@@ -17,10 +17,15 @@
 //was used as source code for cancel/done button toolbar on the picker view.
 //
 
+import GoogleMobileAds
+
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
+     var bannerView: GADBannerView!
+    
+    
     //Class Name Tetboxes (For keyboard hiding)
     @IBOutlet weak var namae1: UITextField!
     @IBOutlet weak var namae2: UITextField!
@@ -142,7 +147,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // Do any additional setup after loading the view, typically from a nib.
         
         
+        let bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        self.view.addSubview(bannerView)
         
+        bannerView.adUnitID = "ca-app-pub-8922445711636151/7058557863"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
 
 
         
@@ -385,6 +395,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
     
 
+    }
+    
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        bannerView.alpha = 0
+        UIView.animate(withDuration: 1, animations: {
+            bannerView.alpha = 1
+        })
     }
     
     //Core Function for GPA Calculation with entered information

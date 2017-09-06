@@ -15,6 +15,7 @@
 		673185EF1F20B00600EC509B /* gintaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673185EE1F20B00600EC509B /* gintaTests.swift */; };
 		673185FA1F20B00600EC509B /* gintaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673185F91F20B00600EC509B /* gintaUITests.swift */; };
 		676D20111F297D8B006AC8A7 /* wacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D20101F297D8B006AC8A7 /* wacViewController.swift */; };
+		677AA03F1F5AFEDB0017E650 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677AA03E1F5AFEDB0017E650 /* GoogleMobileAds.framework */; };
 		67928F151F30339D0096921D /* scaleTable.png in Resources */ = {isa = PBXBuildFile; fileRef = 67928F141F30339D0096921D /* scaleTable.png */; };
 		67928F171F3062F20096921D /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67928F161F3062F20096921D /* profileViewController.swift */; };
 		6799E87F1F3EF874006658BF /* education.trophy_star 256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6799E87E1F3EF874006658BF /* education.trophy_star 256.png */; };
@@ -66,6 +67,7 @@
 		673185F91F20B00600EC509B /* gintaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gintaUITests.swift; sourceTree = "<group>"; };
 		673185FB1F20B00600EC509B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		676D20101F297D8B006AC8A7 /* wacViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wacViewController.swift; sourceTree = "<group>"; };
+		677AA03E1F5AFEDB0017E650 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		67928F141F30339D0096921D /* scaleTable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaleTable.png; sourceTree = "<group>"; };
 		67928F161F3062F20096921D /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		6799E87E1F3EF874006658BF /* education.trophy_star 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "education.trophy_star 256.png"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677AA03F1F5AFEDB0017E650 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +106,7 @@
 		673185CD1F20B00500EC509B = {
 			isa = PBXGroup;
 			children = (
+				677AA03E1F5AFEDB0017E650 /* GoogleMobileAds.framework */,
 				673185D81F20B00500EC509B /* ginta */,
 				673185ED1F20B00600EC509B /* gintaTests */,
 				673185F81F20B00600EC509B /* gintaUITests */,
@@ -465,6 +469,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8WABJGLV4L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ginta/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -483,6 +491,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8WABJGLV4L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ginta/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
